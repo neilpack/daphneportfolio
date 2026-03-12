@@ -2,55 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Daphne Pack">
+    <meta name="description" content="Website for displaying projects">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neil Pack Photo</title>
-    <meta name="description" content="Welcome to Neil's Photography, where you can explore my portfolio and contact me for your photography needs.">
-    <link rel="stylesheet" href="style.css">
-    <script src="photo.js" defer></script>
+    <meta property="og:title" content="Daphne Pack Portfolio">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This is a Portfolio website for Daphne Pack">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Daphne Pack Portfolio</title>
+    <link href="styles/home-style.css" rel="stylesheet"> 
+    <script src="scripts/home-script.js" defer></script>
 </head>
 <body>
+    <!-- NAV BAR -->
     <header>
         <div id="title-card">
-            <h1>Neil Pack</h1>
-            <p>-  Photography</p>
+            <h1>Daphne Pack</h1>
+            <p>-  Portfolio</p>
         </div>
         <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact Me</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="projects.html">Portfolio</a></li>
             </ul>
           </nav>
     </header>
+
+    <!-- HERO IMAGE CAROUSEL -->
 <main>
     <div class="home-image-container">
-        <section class="left">
-            <img src="hero2.JPG" alt="Portrait Photos">
-            <h2>Potrait Photos</h2>
-        </section>
-        <section class="right" >
-            <img src="hero1.JPG" alt="Missionary Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <section aria-label="Newest Photos">
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/hero1.webp" alt="Woman standing in front of a building">
+                    </li>
+                    <li class="slide">
+                        <img src="images/hero2.webp" alt="Boy in a colorful forest">
+                    </li>
+                    <li class="slide">
+                        <img src="images/hero0.webp" alt="A group of friends in the snow">
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div>
             <h2>Missionary Photos</h2>
-        </section>
-        <section class="left" >
-            <img src="hero0.JPG" alt="Roommate Photos">
-            <h2>Roommate Photos</h2>
-        </section>
+        </div>
     </div>
 
+    <!-- ABOUT/CONTACT ME -->
+    <div id="aboutme">
+        <h2>About Me</h2>
+        <section>
+            <img class="left" src="images/me.PNG" alt="me standing in front of a river" loading="lazy">
+            <p class="right">
+                Hi! My name is Daphne Pack.   
+            </p>
+        </section>
+    </div>
 
 </main>
 </body>
-<footer>
-    <p>&copy; 2025 Neil Pack Photography. All rights reserved. This is not an official website.</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/neil.pack/" target="_blank">
-            <img src="instagram.png" alt="Instagram" width="55" height="55">
-        </a>
-        <a href="https://www.facebook.com/neil.pack.75/" target="_blank">
-            <img src="facebook.png" alt="Facebook" width="55" height="55">
-        </a>
-    </div>
-</footer>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Daphne Pack Designs. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/daph_olivia/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" width="55" height="55">
+            </a>
+            <a href="https://www.facebook.com/daphne.christensen.944" target="_blank">
+                <img src="images/facebook.png" alt="Facebook" width="55" height="55">
+            </a>
+        </div>
+    </footer>
 </html>

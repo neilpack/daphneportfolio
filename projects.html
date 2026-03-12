@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daphne Pack">
+    <meta name="description" content="Website for displaying projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Daphne Pack Portfolio">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This is a Portfolio website for Daphne Pack">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Daphne Pack Portfolio</title>
+    <link href="styles/projects-style.css" rel="stylesheet"> 
+    <script src="scripts/projects-script.js" defer></script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <header>
+        <div id="title-card">
+            <h1>Daphne Pack</h1>
+            <p>-  Portfolio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutme">About Me</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+
+    <!-- Title -->
+    <h2 class="portfolio-title">Portfolio</h2>
+
+    <!--Search Bar-->
+        <div class="sbar-container">
+            <input type="text" id="search-input" name="query" placeholder="Find a photo" required>
+            <button type="button" id="search-button">
+                <img src="images/search.png" alt="search icon" id="search-icon">
+            </button>
+        </div>
+
+        <!-- Photo Array -->
+         <section id="photo-container">
+         </section>
+        
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Daphne Pack Designs. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/daph_olivia/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" width="55" height="55">
+            </a>
+            <a href="https://www.facebook.com/daphne.christensen.944" target="_blank">
+                <img src="images/facebook.png" alt="Facebook" width="55" height="55">
+            </a>
+        </div>
+    </footer>
+</html>
