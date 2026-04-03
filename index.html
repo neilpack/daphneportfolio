@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Daphne Pack">
-    <meta name="description" content="Website for displaying projects">
+    <meta name="description" content="Website for displaying Child Development Projects and Reflections">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Daphne Pack Portfolio">
     <meta property="og:type" content="website" />
@@ -12,75 +12,59 @@
     <meta property="og:image" content="URL to an image">
     <meta property="og:url" content="URL of the page">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Daphne Pack Portfolio</title>
+    <title>Daphne Pack - Child Development Portfolio</title>
     <link href="styles/styles.css" rel="stylesheet"> 
     <script src="scripts/index.js" defer></script>
-</head>
 <body>
-    <!-- NAV BAR -->
-    <header>
-        <div id="title-card">
-            <h1>Daphne Pack</h1>
-            <p>-  Portfolio</p>
-        </div>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#aboutme">About Me</a></li>
-              <li><a href="projects.html">Portfolio</a></li>
-            </ul>
-          </nav>
+
+    <header class="main-header">
+        <h1>DAPHNE PACK - CHILD DEVELOPMENT PORTFOLIO</h1>
     </header>
 
-    <!-- HERO IMAGE CAROUSEL -->
-<main>
-    <div class="home-image-container">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-            <section aria-label="Newest Photos">
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="images/hero1.webp" alt="Woman standing in front of a building">
-                    </li>
-                    <li class="slide">
-                        <img src="images/hero2.webp" alt="Boy in a colorful forest">
-                    </li>
-                    <li class="slide">
-                        <img src="images/hero0.webp" alt="A group of friends in the snow">
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <div>
-            <h2>Missionary Photos</h2>
-        </div>
-    </div>
+    <main class="portfolio-container">
+        <aside class="sidebar">
+            <button class="tab-button active" data-target="practitioners">Developmental Practitioners</button>
+            <button class="tab-button" data-target="builders">Relationship Builders</button>
+            <button class="tab-button" data-target="teachers">Intentional Teachers</button>
+            <button class="tab-button" data-target="professionals">Citizen Professionals</button>
+            <button class="tab-button" data-target="enthusiasts">Nature Enthusiasts</button>
+            <button class="tab-button" data-target="learners">Joyful Learners</button>
+        </aside>
 
-    <!-- ABOUT/CONTACT ME -->
-    <div id="aboutme">
-        <h2>About Me</h2>
-        <section>
-            <img class="left" src="images/me.PNG" alt="me standing in front of a river" loading="lazy">
-            <p class="right">
-                Hi! My name is Daphne Pack.   
-            </p>
+        <section class="content-area">
+            
+            <div id="practitioners" class="tab-content active">
+                <div class="content-box top-box">Content Block 1 (Practitioners)</div>
+                <div class="content-box bottom-box">Content Block 2 (Practitioners)</div>
+            </div>
+
+            <div id="builders" class="tab-content">
+                <div class="content-box top-box">Content Block 1 (Builders)</div>
+                <div class="content-box bottom-box">Content Block 2 (Builders)</div>
+            </div>
+
+            <div id="teachers" class="tab-content">
+                <div class="content-box top-box">Content Block 1 (Teachers)</div>
+                <div class="content-box bottom-box">Content Block 2 (Teachers)</div>
+            </div>
+
+            <div id="professionals" class="tab-content">
+                <div class="content-box top-box">Content Block 1 (Professionals)</div>
+                <div class="content-box bottom-box">Content Block 2 (Professionals)</div>
+            </div>
+
+            <div id="enthusiasts" class="tab-content">
+                <div class="content-box top-box">Content Block 1 (Enthusiasts)</div>
+                <div class="content-box bottom-box">Content Block 2 (Enthusiasts)</div>
+            </div>
+
+            <div id="learners" class="tab-content">
+                <div class="content-box top-box">Content Block 1 (Learners)</div>
+                <div class="content-box bottom-box">Content Block 2 (Learners)</div>
+            </div>
+
         </section>
-    </div>
+    </main>
 
-</main>
 </body>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Daphne Pack Designs. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/daph_olivia/" target="_blank">
-                <img src="images/instagram.png" alt="Instagram" width="55" height="55">
-            </a>
-            <a href="https://www.facebook.com/daphne.christensen.944" target="_blank">
-                <img src="images/facebook.png" alt="Facebook" width="55" height="55">
-            </a>
-        </div>
-    </footer>
 </html>
