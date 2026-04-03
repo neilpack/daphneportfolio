@@ -159,7 +159,6 @@ h1 {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
-    /* font-size: 25px; */
 }
 
 .artifact-list a:hover {
@@ -175,7 +174,7 @@ h1 {
 }
 
 .thumbnail-link img {
-    width: 160px;
+    width: 155px;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 4px; /* Optional, for cleaner edges */
@@ -186,10 +185,10 @@ h1 {
     transform: scale(1.05); /* Optional, slight zoom on hover */
 }
 
-.phone-image {
-    width: 400px;
-    height: 400px;
+.thumbnail-link img.phone-image {
+    width: 270px;
+    height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 8px; /* Optional, for cleaner edges */
-    transition: transform 0.2s; /* Optional, for hover effect */
+    border-radius: 8px; 
+    transition: transform 0.2s; 
 }
