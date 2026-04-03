@@ -22,7 +22,7 @@ body {
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
     height: 120px;
     display: flex;
     justify-content: center;
-    position: relative; /* Allows child absolute positioning */
+    position: relative; 
     border-bottom: 4px solid var(--primary-color);
     margin-bottom: 10px;
 }
@@ -44,12 +44,12 @@ h1 {
     background-color: white;
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
-    border-radius: 20px; /* Creates the bubble look */
+    border-radius: 20px; 
     padding: 15px 40px;
     font-size: 32px;
     letter-spacing: 1px;
     position: absolute;
-    bottom: -20px; /* Pulls the box down to overlap the bottom area */
+    bottom: -20px; 
     z-index: 10;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -107,14 +107,14 @@ h1 {
 }
 
 .tab-content {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     gap: 20px;
     height: 100%;
 }
 
 .tab-content.active {
-    display: flex; /* Shown when active */
+    display: flex; 
 }
 
 .content-box {
@@ -131,12 +131,12 @@ h1 {
 }
 
 .top-box {
-    flex: 2; /* 2/3 of the height */
+    flex: 2; 
     min-height: 300px;
 }
 
 .bottom-box {
-    flex: 1; /* 1/3 of the height */
+    flex: 1; 
     min-height: 50px;
 }
 
@@ -145,7 +145,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px; /* Adjust spacing between items as needed */
+    gap: 15px; 
     list-style: none;
     padding: 0;
     margin: 0;
@@ -153,6 +153,7 @@ h1 {
 
 .artifact-list li {
     margin-bottom: 10px;
+    display: flex;
 }
 
 .artifact-list a {
@@ -173,22 +174,41 @@ h1 {
     margin-bottom: 10px;
 }
 
-.thumbnail-link img {
-    width: 155px;
-    height: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 4px; /* Optional, for cleaner edges */
-    transition: transform 0.2s; /* Optional, for hover effect */
+.thumbnail-link {
+    display: inline-flex;
+    flex-direction: column;
+    width: min-content; /* Shrink-wraps the container to match the image width perfectly */
+    transition: transform 0.2s; 
 }
 
-.thumbnail-link img:hover {
-    transform: scale(1.05); /* Optional, slight zoom on hover */
+.thumbnail-link:hover {
+    transform: scale(1.05); 
+}
+
+.artifact-tag {
+    background-color: var(--accent-color1);
+    color: var(--white-color);
+    padding: 6px 8px;
+    font-size: 14px;
+    font-family: "Tinos", serif;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 4px 4px 0 0; /* Rounds top corners only */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.thumbnail-link img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 4px 4px; /* Rounds bottom corners to attach to tag */
+    display: block; /* Prevents tiny whitespace gap beneath images */
 }
 
 .thumbnail-link img.phone-image {
-    width: 270px;
+    width: 315px;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 8px; 
-    transition: transform 0.2s; 
+    border-radius: 0 0 8px 8px; 
 }
