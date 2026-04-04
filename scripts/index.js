@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
             // Find the target content ID and make it active
             const targetId = button.getAttribute('data-target');
             document.getElementById(targetId).classList.add('active');
+
+            // Scroll to the top of the page smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 });

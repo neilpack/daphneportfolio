@@ -14,7 +14,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+}
+
+html {
+    overflow-y: scroll;
+}
 
 body {
     background-color: var(--white-color);
@@ -199,7 +203,7 @@ h1 {
 }
 
 .thumbnail-link img {
-    width: 200px;
+    width: 185px;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 4px 4px; /* Rounds bottom corners to attach to tag */
@@ -207,7 +211,7 @@ h1 {
 }
 
 .thumbnail-link img.phone-image {
-    width: 315px;
+    width: 300px;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 8px 8px; 
